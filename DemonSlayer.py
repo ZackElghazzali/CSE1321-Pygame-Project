@@ -73,7 +73,6 @@ playerAttackSound = pg.mixer.Sound("./assets/Sound/Player_Attack.mp3")
 pg.mixer.music.play(loops=-1)
 stop = 1
 
-
 # Adventurer Class
 class Adventurer(pg.sprite.Sprite):
     def __init__(self, x, y, scale, speed):
@@ -498,7 +497,7 @@ while run:
     if adventurer.attacking:
         attack_hitbox = adventurer.get_attack_hitbox()
         pg.draw.rect(screen, (255, 0, 0), attack_hitbox, 2)  # Draw attack hitbox in red
-    adventurer.draw_hitbox()
+    #adventurer.draw_hitbox()
     if adventurer_health >= 1:
         stop = 1
     if adventurer_health <= 0 and stop == 1:
