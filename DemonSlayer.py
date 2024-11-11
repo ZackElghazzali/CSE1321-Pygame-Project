@@ -437,7 +437,7 @@ def restart_game():
     adventurer.index = 0
     adventurer.action = 'Idle'
     adventurer.rect.x = 100
-    adventurer.rect.bottom = Screen_H - 50  # Set bottom of adventurer to 10 pixels above screen bottom
+    adventurer.rect.bottom = Screen_H - 10  # Change these two to -10 otherwise a bug occurs after winning regarding the demon
 
     # Reset demon
     demon.alive = True
@@ -445,7 +445,7 @@ def restart_game():
     demon.index = 0
     demon.action = 'Idle'
     demon.rect.x = 800
-    demon.rect.bottom = Screen_H - 50  # Set bottom of demon to 10 pixels above screen bottom
+    demon.rect.bottom = Screen_H - 10  # Change these two to -10 otherwise a bug occurs after winning regarding the demon
 
     pg.mixer.music.play(loops=-1)
 
