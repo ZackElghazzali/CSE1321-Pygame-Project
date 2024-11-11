@@ -64,12 +64,12 @@ adventurer_health = 10
 demon_health = 25
 
 #loading music and sounds
-pg.mixer.music.load("./assets/Sound/Music.mp3")
-enemyAttackSound = pg.mixer.Sound("./assets/Sound/Enemy_Attack.mp3")
-enemyDeathSound = pg.mixer.Sound("./assets/Sound/Enemy_Death.mp3")
-loseSound = pg.mixer.Sound("./assets/Sound/Failure.mp3")
-victorySound = pg.mixer.Sound("./assets/Sound/Victory.mp3")
-playerAttackSound = pg.mixer.Sound("./assets/Sound/Player_Attack.mp3")
+pg.mixer.music.load("./assets/sound/Music.mp3")
+enemyAttackSound = pg.mixer.Sound("./assets/sound/Enemy_Attack.mp3")
+enemyDeathSound = pg.mixer.Sound("./assets/sound/Enemy_Death.mp3")
+loseSound = pg.mixer.Sound("./assets/sound/Failure.mp3")
+victorySound = pg.mixer.Sound("./assets/sound/Victory.mp3")
+playerAttackSound = pg.mixer.Sound("./assets/sound/Player_Attack.mp3")
 pg.mixer.music.play(loops=-1)
 stop = 1
 
